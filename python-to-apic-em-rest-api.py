@@ -63,6 +63,7 @@ def doRestCall(aTicket, command, url, aData=None):
         try:
             for device in device_list:
                 print 'Name of device: %s' % device['hostname']
+                print 'IP of device: %s' % device['managementIpAddress']
                 print 'MAC address of device: %s' % device['macAddress']
                 print 'Device type: %s' % device['type']
                 print 'Device Series: %s' % device['series']
